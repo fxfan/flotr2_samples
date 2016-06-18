@@ -1,0 +1,27 @@
+{
+  "name": "flotr2_samples",
+  "version": "1.0.0",
+  "description": "samples of flotr2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiaofan",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      "debowerify"
+    ]
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "coffee-script": "^1.10.0",
+    "debowerify": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "jquery": "^3.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
