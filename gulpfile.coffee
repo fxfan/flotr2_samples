@@ -17,4 +17,15 @@ gulp.task 'scripts', ->
   .pipe sourcemaps.write './'
   .pipe gulp.dest 'public/js'
 
+  browserify
+    entries: ['src/js/breaking_down_pie_chart.coffee']
+    debug: true
+  .transform 'coffeeify'
+  .bundle()
+  .pipe source 'breaking_down_pie_chart.js'
+  .pipe buffer()
+  .pipe sourcemaps.init { loadMaps: true }
+#  .pipe uglify()
+  .pipe sourcemaps.write './'
+  .pipe gulp.dest 'public/js'
 
